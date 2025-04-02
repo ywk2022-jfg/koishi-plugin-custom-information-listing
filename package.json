@@ -1,0 +1,26 @@
+{
+  "name": "koishi-plugin-custom-information-listing",
+  "description": "一个可以自定义录入信息并可以返回自定义信息的插件(目前自用,你们用也行),主要是为了游戏的黑/白名单统计",
+  "version": "1.0.0",
+  "contributors": [                        
+    "卷风哥 <ywk@jfgblog.top>"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ywk2022-jfg/koishi-plugin-custom-information-listing",
+
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin"
+  ],
+
+  "peerDependencies": {
+    "koishi": "^4.18.7"
+  }
+}
