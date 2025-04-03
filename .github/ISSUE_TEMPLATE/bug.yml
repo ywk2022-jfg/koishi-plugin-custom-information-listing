@@ -1,0 +1,76 @@
+name: Bug 反馈
+description: 提交一个你遇到的 koishi-plugin-custom-information-listing 插件的 Bug 
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+
+  - type: input
+    id: plugin-version      
+    attributes:
+      label: 插件的版本号
+      description: 请提供您使用的插件版本号，例如 v1.2.3
+      placeholder: v1.2.3
+    validations:
+      required: false
+
+  - type: textarea
+    id: koishi-webui-env    
+    attributes:
+      label: koishi webUI 的环境信息
+      description: 请提供 `koishi` 的环境信息，您可以在 `koishi webUI` 的 左下角找到。例如：koishi 版本、操作系统版本等。请使用代码块包裹 (```)。
+    validations:
+      required: false
+
+  - type: textarea
+    id: describe-bug        
+    attributes:
+      label: 请描述你遇到的bug
+      description: 描述遇到的bug
+      placeholder: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps 
+    attributes:
+      label: 复现步骤
+      description: 请提供清晰的复现步骤，方便我们重现问题。
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected-behavior   
+    attributes:
+      label: 预期行为
+      description: 你觉得应该发生什么？
+      placeholder: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior     
+    attributes:
+      label: 实际行为
+      description: 实际发生了什么？
+      placeholder: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-log           
+    attributes:
+      label: 报错日志
+      description: 请提供报错日志
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots        
+    attributes:
+      label: 截图 (可选)
+      description: 可以提供 Bug 的截图
+      placeholder: 请将截图粘贴或拖拽到这里
+    validations:
+      required: false
