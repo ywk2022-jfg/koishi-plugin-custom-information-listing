@@ -17,12 +17,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          registry-url: 'https://registry.npmjs.org'
         env:
           DISABLE_V8_COMPILE_CACHE: 1
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: yarn build
+        run: npm run build
       - name: Publish
         run: |
           npm config set provenance true
