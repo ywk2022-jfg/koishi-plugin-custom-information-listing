@@ -1,11 +1,11 @@
 name: Publish Package to npmjs
 
-on: 
-  release: 
-    types: [published]
-    on: workflow_dispatch
+on:
+  workflow_dispatch:
+
 jobs:
   build:
+  
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,4 +20,5 @@ jobs:
       - run: yarn npm publish // for Yarn version 1, use `yarn publish` instead
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
         
