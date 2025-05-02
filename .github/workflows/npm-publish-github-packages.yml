@@ -16,7 +16,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
           # Defaults to the user or organization that owns the workflow file
           scope: '@octocat'
-      - run: yarn build
+      - run: yarn
       - run: yarn pub koishi-plugin-custom-information-listing
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
